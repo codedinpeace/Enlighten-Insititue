@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enlighten Institute – Expert Mathematics Coaching | JEE, WB JEE, Class 11 & 12 | Rishra</title>
+  <meta name="description" content="Enlighten Institute offers expert Mathematics coaching for Class 11, 12, JEE Mains, and WB JEE in Rishra, Hooghly. Learn from Arvind Sharma – a dedicated educator committed to student excellence." />
+  <meta name="keywords" content="Enlighten Institute, Arvind Sharma, Mathematics coaching Rishra, JEE Mains coaching Hooghly, WB JEE coaching, Class 11 Maths, Class 12 Maths, coaching institute Rishra" />
+  <meta name="author" content="Arvind Sharma – Enlighten Institute" />
+  <meta property="og:title" content="Enlighten Institute – Mathematics Coaching in Rishra" />
+  <meta property="og:description" content="Expert Mathematics coaching for JEE Mains, WB JEE, Class 11 & 12 by Arvind Sharma in Rishra, Hooghly." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://enlighteninstitute.in" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --navy: #0a1628;
+      --navy-mid: #112240;
+      --navy-light: #1a3056;
+      --gold: #c9982a;
+      --gold-light: #e8b84b;
+      --cream: #f7f3ec;
+      --cream-dark: #ede7d9;
+      --white: #ffffff;
+      --text-muted: #6b7280;
+      --text-body: #374151;
+      --border: rgba(201,152,42,0.2);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--white);
+      color: var(--text-body);
+      overflow-x: hidden;
+    }
+
+    /* ─── NAVBAR ─── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: rgba(10,22,40,0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      transition: box-shadow 0.3s;
+    }
+
+    nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.4); }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .logo-icon {
+      width: 38px;
+      height: 38px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      color: var(--navy);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .logo-text {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--white);
+      line-height: 1.2;
+    }
+
+    .logo-sub {
+      font-size: 0.62rem;
+      color: var(--gold);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--gold-light); }
+
+    .nav-cta {
+      background: var(--gold);
+      color: var(--navy) !important;
+      padding: 8px 20px;
+      border-radius: 4px;
+      font-weight: 600 !important;
+      transition: background 0.2s, transform 0.2s !important;
+    }
+
+    .nav-cta:hover {
+      background: var(--gold-light) !important;
+      transform: translateY(-1px);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      transition: all 0.3s;
+    }
+
+    /* ─── HERO ─── */
+    #hero {
+      min-height: 100vh;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 100px 5% 60px;
+    }
+
+    .hero-bg-pattern {
+      position: absolute;
+      inset: 0;
+      opacity: 0.04;
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 60px, rgba(201,152,42,1) 60px, rgba(201,152,42,1) 61px),
+        repeating-linear-gradient(90deg, transparent, transparent 60px, rgba(201,152,42,1) 60px, rgba(201,152,42,1) 61px);
+    }
+
+    .hero-glow {
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(201,152,42,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 4rem;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(201,152,42,0.12);
+      border: 1px solid rgba(201,152,42,0.35);
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--gold-light);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      width: fit-content;
+    }
+
+    .hero-badge::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      background: var(--gold);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%,100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.3); }
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 4.5vw, 4rem);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-title .accent {
+      color: var(--gold);
+      display: block;
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.75;
+      margin-bottom: 2rem;
+      max-width: 520px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--navy);
+      border: none;
+      padding: 14px 28px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      letter-spacing: 0.01em;
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(201,152,42,0.35);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 1.5px solid rgba(255,255,255,0.3);
+      padding: 13px 28px;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: border-color 0.2s, background 0.2s, transform 0.2s;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--gold);
+      color: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2.5rem;
+    }
+
+    .stat-item { text-align: left; }
+
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.5);
+      margin-top: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(201,152,42,0.2);
+      border-radius: 16px;
+      padding: 2.5rem;
+      backdrop-filter: blur(8px);
+      animation: floatCard 4s ease-in-out infinite;
+    }
+
+    @keyframes floatCard {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 1.75rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .teacher-avatar {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: 1.4rem;
+      color: var(--navy);
+      flex-shrink: 0;
+    }
+
+    .teacher-info .name {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      color: var(--white);
+      font-size: 1.05rem;
+    }
+
+    .teacher-info .title {
+      font-size: 0.8rem;
+      color: var(--gold);
+      margin-top: 2px;
+    }
+
+    .courses-list { display: flex; flex-direction: column; gap: 10px; }
+
+    .course-chip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(201,152,42,0.15);
+      border-radius: 8px;
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.85);
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .course-chip:hover {
+      border-color: var(--gold);
+      background: rgba(201,152,42,0.08);
+    }
+
+    .course-chip .dot {
+      width: 8px;
+      height: 8px;
+      background: var(--gold);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ─── SECTIONS COMMON ─── */
+    section { padding: 90px 5%; }
+
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.75rem, 3vw, 2.6rem);
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
+
+    .section-desc {
+      font-size: 1rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      max-width: 600px;
+    }
+
+    .section-header { margin-bottom: 3.5rem; }
+
+    .container { max-width: 1200px; margin: 0 auto; }
+
+    /* ─── WHY US ─── */
+    #why {
+      background: var(--cream);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .why-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 2rem;
+      border: 1px solid var(--cream-dark);
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .why-card:hover {
+      box-shadow: 0 12px 36px rgba(10,22,40,0.1);
+      transform: translateY(-4px);
+    }
+
+    .why-icon {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, rgba(201,152,42,0.15), rgba(201,152,42,0.05));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 1.25rem;
+      border: 1px solid rgba(201,152,42,0.2);
+    }
+
+    .why-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 0.6rem;
+    }
+
+    .why-card p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* ─── COURSES ─── */
+    #courses { background: var(--white); }
+
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .course-card {
+      background: var(--navy);
+      border-radius: 14px;
+      padding: 2.25rem;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: default;
+    }
+
+    .course-card::before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(201,152,42,0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 50px rgba(10,22,40,0.3);
+    }
+
+    .course-tag {
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(201,152,42,0.15);
+      border: 1px solid rgba(201,152,42,0.3);
+      border-radius: 100px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1.25rem;
+    }
+
+    .course-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+
+    .course-card p {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+    }
+
+    .course-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .feature-pill {
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 4px;
+      color: rgba(255,255,255,0.7);
+    }
+
+    /* ─── TEACHER ─── */
+    #teacher { background: var(--cream); }
+
+    .teacher-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .teacher-photo-box {
+      position: relative;
+    }
+
+    .teacher-photo-placeholder {
+      width: 100%;
+      aspect-ratio: 3/4;
+      max-width: 280px;
+      background: linear-gradient(160deg, var(--navy-mid), var(--navy));
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border: 3px solid var(--gold);
+      position: relative;
+    }
+
+    .teacher-initial {
+      font-family: 'Playfair Display', serif;
+      font-size: 6rem;
+      font-weight: 900;
+      color: rgba(201,152,42,0.3);
+    }
+
+    .teacher-badge-floating {
+      position: absolute;
+      bottom: -16px;
+      right: -16px;
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 700;
+      font-size: 0.75rem;
+      padding: 10px 14px;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 1.3;
+      box-shadow: 0 8px 24px rgba(201,152,42,0.4);
+    }
+
+    .teacher-content .section-title { margin-bottom: 0.75rem; }
+
+    .teacher-quote {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--gold);
+      font-family: 'Playfair Display', serif;
+      border-left: 3px solid var(--gold);
+      padding-left: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .teacher-bio {
+      font-size: 0.95rem;
+      color: var(--text-body);
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+    }
+
+    .yt-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #ff0000;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.875rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .yt-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(255,0,0,0.3);
+    }
+
+    /* ─── REVIEWS ─── */
+    #reviews { background: var(--navy); }
+    #reviews .section-title { color: var(--white); }
+    #reviews .section-desc { color: rgba(255,255,255,0.55); }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .review-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(201,152,42,0.15);
+      border-radius: 14px;
+      padding: 2rem;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+
+    .review-card:hover {
+      border-color: rgba(201,152,42,0.4);
+      transform: translateY(-3px);
+    }
+
+    .stars {
+      color: var(--gold);
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      letter-spacing: 2px;
+    }
+
+    .review-text {
+      font-size: 0.93rem;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.7;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+
+    .reviewer-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .reviewer-avatar {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.875rem;
+      color: var(--navy);
+    }
+
+    .reviewer-name {
+      font-weight: 600;
+      color: var(--white);
+      font-size: 0.9rem;
+    }
+
+    .reviewer-sub {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.4);
+      margin-top: 2px;
+    }
+
+    /* ─── CONTACT ─── */
+    #contact { background: var(--white); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contact-info h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+
+    .contact-info p {
+      color: var(--text-muted);
+      font-size: 0.93rem;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .contact-methods {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact-btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .contact-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    .contact-btn .cb-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .cb-call { background: #f0faf4; color: #1a7a4a; }
+    .cb-call .cb-icon { background: #d1fae5; }
+
+    .cb-whatsapp { background: #f0faf4; color: #128c7e; }
+    .cb-whatsapp .cb-icon { background: #25d366; color: white; }
+
+    .cb-email { background: #fef3f2; color: #c0392b; }
+    .cb-email .cb-icon { background: #fee2e2; }
+
+    .contact-btn .cb-text { text-align: left; }
+    .contact-btn .cb-label { display: block; font-size: 0.75rem; font-weight: 400; opacity: 0.7; margin-bottom: 1px; }
+
+    .address-box {
+      background: var(--cream);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-top: 1.75rem;
+      border: 1px solid var(--cream-dark);
+    }
+
+    .address-box h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.95rem;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .address-box p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Contact Form */
+    .contact-form-wrapper {
+      background: var(--navy);
+      border-radius: 16px;
+      padding: 2.5rem;
+    }
+
+    .contact-form-wrapper h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--white);
+      font-size: 1.3rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .form-group { margin-bottom: 1.25rem; }
+
+    .form-group label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--white);
+      padding: 12px 14px;
+      border-radius: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .form-group select option { background: var(--navy-mid); }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(255,255,255,0.3);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--gold);
+      background: rgba(201,152,42,0.06);
+    }
+
+    .form-group textarea { resize: vertical; min-height: 110px; }
+
+    .form-submit {
+      width: 100%;
+      padding: 14px;
+      background: var(--gold);
+      color: var(--navy);
+      border: none;
+      border-radius: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .form-submit:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 2rem;
+      color: var(--gold-light);
+      font-size: 1rem;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--navy);
+      border-top: 1px solid rgba(201,152,42,0.15);
+      padding: 50px 5% 30px;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 1.75rem;
+    }
+
+    .footer-brand .logo-text { font-size: 1.25rem; }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.65;
+      margin-top: 0.75rem;
+    }
+
+    .footer-col h4 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+
+    .footer-col ul li a {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-col ul li a:hover { color: var(--gold-light); }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.3);
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .footer-bottom a { color: var(--gold); text-decoration: none; }
+
+    /* ─── MOBILE MENU ─── */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 68px;
+      left: 0;
+      right: 0;
+      background: var(--navy-mid);
+      padding: 1.5rem 5%;
+      z-index: 999;
+      border-bottom: 1px solid var(--border);
+      animation: slideDown 0.25s ease;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .mobile-menu.open { display: block; }
+
+    .mobile-menu a {
+      display: block;
+      padding: 12px 0;
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 1rem;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      transition: color 0.2s;
+    }
+
+    .mobile-menu a:hover { color: var(--gold-light); }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-card { display: none; }
+      .why-grid { grid-template-columns: repeat(2, 1fr); }
+      .teacher-wrapper { grid-template-columns: 1fr; }
+      .teacher-photo-box { display: none; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .why-grid { grid-template-columns: 1fr; }
+      .courses-grid { grid-template-columns: 1fr; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+      section { padding: 60px 5%; }
+      .hero-stats { gap: 1.5rem; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title { font-size: 2rem; }
+      .hero-actions { flex-direction: column; }
+      .btn-primary, .btn-outline { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ─── NAVBAR ─── -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <div class="logo-icon">E</div>
+    <div>
+      <div class="logo-text">Enlighten Institute</div>
+      <div class="logo-sub">Mathematics Excellence</div>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#teacher">Our Teacher</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+  </ul>
+
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#why" onclick="toggleMenu()">Why Us</a>
+  <a href="#courses" onclick="toggleMenu()">Courses</a>
+  <a href="#teacher" onclick="toggleMenu()">Our Teacher</a>
+  <a href="#reviews" onclick="toggleMenu()">Reviews</a>
+  <a href="#contact" onclick="toggleMenu()">Contact Us</a>
+</div>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-glow"></div>
+
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">Rishra's Premier Maths Coaching</div>
+
+      <h1 class="hero-title">
+        Master Mathematics.
+        <span class="accent">Crack Every Exam.</span>
+      </h1>
+
+      <p class="hero-desc">
+        Enlighten Institute brings focused, concept-driven Mathematics coaching for Class 11, Class 12, JEE Mains, and WB JEE students — across all boards. Learn from Arvind Sharma, a dedicated educator with a passion for making Maths accessible and achievable.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">
+          📞 Enroll Now
+        </a>
+        <a href="https://www.youtube.com/@ArvindSharmaEnlightenInstitue" target="_blank" rel="noopener" class="btn-outline">
+          ▶ Watch Free Lessons
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">500+</div>
+          <div class="stat-label">Students Taught</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">95%</div>
+          <div class="stat-label">Success Rate</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">10+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="card-header">
+        <div class="teacher-avatar">A</div>
+        <div class="teacher-info">
+          <div class="name">Arvind Sharma</div>
+          <div class="title">Mathematics Expert · JEE Specialist</div>
+        </div>
+      </div>
+      <div class="courses-list">
+        <div class="course-chip"><span class="dot"></span> Class 11 Mathematics – All Boards</div>
+        <div class="course-chip"><span class="dot"></span> Class 12 Mathematics – All Boards</div>
+        <div class="course-chip"><span class="dot"></span> JEE Mains – Intensive Preparation</div>
+        <div class="course-chip"><span class="dot"></span> WB JEE – Focused Strategy</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── WHY US ─── -->
+<section id="why">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Why Enlighten Institute</div>
+      <h2 class="section-title">A Coaching Experience Built<br>Around Student Success</h2>
+      <p class="section-desc">We don't just teach formulas — we build mathematical thinking that lasts well beyond the exam hall.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🎯</div>
+        <h3>Concept-First Approach</h3>
+        <p>Every topic is taught from its root — ensuring students understand the "why" behind every formula and derivation, making complex problems feel intuitive.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📐</div>
+        <h3>JEE & WB JEE Focused</h3>
+        <p>Syllabus is mapped precisely to JEE Mains and WB JEE patterns. Regular mock tests, previous year paper analysis, and time-bound practice sessions.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🏫</div>
+        <h3>All Boards Covered</h3>
+        <p>Whether you're from CBSE, WBCHSE, ICSE, or any other board — our teaching methodology adapts seamlessly to your curriculum requirements.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🧑‍🏫</div>
+        <h3>Personal Attention</h3>
+        <p>Small batch sizes ensure every student gets direct attention. Doubts are not just answered — they are explained until truly understood.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📹</div>
+        <h3>Free YouTube Support</h3>
+        <p>All students get access to revision videos and concept breakdowns on the Arvind Sharma Enlighten Institute YouTube channel — completely free.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📍</div>
+        <h3>Conveniently Located</h3>
+        <p>Situated in the heart of Rishra near Maheshwari Bhawan, the institute is easily accessible by students from Rishra, Serampore, Uttarpara and nearby areas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── COURSES ─── -->
+<section id="courses">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Programs Offered</div>
+      <h2 class="section-title">Courses Designed to<br>Get You to the Top</h2>
+      <p class="section-desc">Structured programs for every stage of your Mathematics journey — from board excellence to competitive exam mastery.</p>
+    </div>
+
+    <div class="courses-grid">
+      <div class="course-card">
+        <div class="course-tag">Class 11</div>
+        <h3>Mathematics – Class XI</h3>
+        <p>Build a rock-solid foundation in Sets, Functions, Trigonometry, Coordinate Geometry, Calculus introductions, and Statistics. All boards covered including CBSE & WBCHSE.</p>
+        <div class="course-features">
+          <span class="feature-pill">CBSE</span>
+          <span class="feature-pill">WBCHSE</span>
+          <span class="feature-pill">ICSE</span>
+          <span class="feature-pill">Weekly Tests</span>
+          <span class="feature-pill">Study Material</span>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-tag">Class 12</div>
+        <h3>Mathematics – Class XII</h3>
+        <p>Master Relations & Functions, Matrices, Calculus, Vectors, 3D Geometry, Probability and more. Complete board exam preparation with previous year question coverage.</p>
+        <div class="course-features">
+          <span class="feature-pill">CBSE</span>
+          <span class="feature-pill">WBCHSE</span>
+          <span class="feature-pill">ICSE</span>
+          <span class="feature-pill">Board Pattern</span>
+          <span class="feature-pill">Mock Boards</span>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-tag">JEE Mains</div>
+        <h3>JEE Mains Mathematics</h3>
+        <p>Strategic preparation for JEE Mains covering all high-weightage topics: Algebra, Calculus, Coordinate Geometry, Trigonometry, and Statistics with NTA-pattern mock tests.</p>
+        <div class="course-features">
+          <span class="feature-pill">NTA Pattern</span>
+          <span class="feature-pill">Mock Tests</span>
+          <span class="feature-pill">PYQs</span>
+          <span class="feature-pill">Shortcuts</span>
+          <span class="feature-pill">Doubt Sessions</span>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-tag">WB JEE</div>
+        <h3>WB JEE Mathematics</h3>
+        <p>Targeted coaching aligned with the WB JEE syllabus and pattern. Focus on topics unique to WB JEE like Application of Derivatives, Definite Integrals, and Coordinate Geometry.</p>
+        <div class="course-features">
+          <span class="feature-pill">WB Pattern</span>
+          <span class="feature-pill">Full Syllabus</span>
+          <span class="feature-pill">Mock Tests</span>
+          <span class="feature-pill">Rank Strategy</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TEACHER ─── -->
+<section id="teacher">
+  <div class="container">
+    <div class="teacher-wrapper">
+      <div class="teacher-photo-box">
+        <div class="teacher-photo-placeholder">
+          <span class="teacher-initial">A</span>
+        </div>
+        <div class="teacher-badge-floating">
+          Mathematics<br>Expert
+        </div>
+      </div>
+
+      <div class="teacher-content">
+        <div class="section-label">Meet Your Educator</div>
+        <h2 class="section-title">Arvind Sharma</h2>
+
+        <div class="teacher-quote">
+          "Mathematics is not about numbers, equations, or algorithms — it is about understanding. My goal is to make every student see the beauty in it."
+        </div>
+
+        <p class="teacher-bio">
+          Arvind Sharma is a passionate Mathematics educator based in Rishra, Hooghly, with extensive experience teaching students from Class 11, 12, and competitive entrance exams including JEE Mains and WB JEE. His teaching philosophy centers on building strong conceptual clarity before moving to problem-solving — ensuring students don't just score well, but truly understand Mathematics.
+        </p>
+
+        <p class="teacher-bio">
+          With a deep commitment to student success, Arvind Sir is known for his patient, thorough explanations and his ability to break down difficult concepts into clear, logical steps. His students across all boards have consistently achieved strong results in board examinations and competitive tests alike.
+        </p>
+
+        <a href="https://www.youtube.com/@ArvindSharmaEnlightenInstitue" target="_blank" rel="noopener" class="yt-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+          Watch Free Lessons on YouTube
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── REVIEWS ─── -->
+<section id="reviews">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Student Testimonials</div>
+      <h2 class="section-title">What Our Students Say</h2>
+      <p class="section-desc">Real feedback from students who've experienced the Enlighten Institute difference.</p>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Arvind Sir completely changed the way I look at Mathematics. Before joining Enlighten Institute, I used to dread Calculus. Now it's my strongest subject in JEE preparation. The way he explains limits and derivatives — step by step, with real logic — is unmatched. I cleared WB JEE with a strong rank, and I owe a lot of that to him."</p>
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">PS</div>
+          <div>
+            <div class="reviewer-name">Pranam Shaw</div>
+            <div class="reviewer-sub">WB JEE Qualifier · WBCHSE Board</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Joining Enlighten Institute in Class 11 was one of the best decisions I've made. Arvind Sir makes sure every student understands before moving forward. The personal attention and regular practice tests helped me score 95 in Mathematics in my Class 12 CBSE boards. Highly recommend this institute to anyone serious about Maths."</p>
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">SS</div>
+          <div>
+            <div class="reviewer-name">Shubham Shaw</div>
+            <div class="reviewer-sub">Class 12 – CBSE · 95% in Mathematics</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"I was struggling with coordinate geometry and 3D Geometry for JEE Mains. After joining Arvind Sir's batch, not only did my concepts become crystal clear, but I started actually enjoying solving JEE problems. His approach is very systematic and focused. The YouTube videos he uploads are also extremely helpful for revision."</p>
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">PG</div>
+          <div>
+            <div class="reviewer-name">Pratik Goswami</div>
+            <div class="reviewer-sub">JEE Mains Aspirant · CBSE Board</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"What sets Enlighten Institute apart is how Arvind Sir doesn't just rush through the syllabus — he makes sure every single student is on track. Even when I had doubts outside class hours, he was always available to help. My performance in both board exams and JEE mock tests improved drastically within months of joining. Truly a dedicated teacher."</p>
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">AY</div>
+          <div>
+            <div class="reviewer-name">Ayush Shrivastav</div>
+            <div class="reviewer-sub">JEE Mains & WB JEE · WBCHSE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Ready to Start Your<br>Mathematics Journey?</h2>
+      <p class="section-desc">Reach out directly to Arvind Sir to inquire about admissions, batch timings, or any queries about our programs.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Contact Arvind Sharma</h3>
+        <p>We're here to answer your questions and help you get started on the path to Mathematics excellence. Choose the way you prefer to reach us.</p>
+
+        <div class="contact-methods">
+          <a href="tel:+918013968211" class="contact-btn cb-call">
+            <div class="cb-icon">📞</div>
+            <div class="cb-text">
+              <span class="cb-label">Call directly</span>
+              +91 80139 68211
+            </div>
+          </a>
+          <a href="https://wa.me/918013968211?text=Hello%20Arvind%20Sir%2C%20I%20am%20interested%20in%20joining%20Enlighten%20Institute." target="_blank" rel="noopener" class="contact-btn cb-whatsapp">
+            <div class="cb-icon">💬</div>
+            <div class="cb-text">
+              <span class="cb-label">WhatsApp message</span>
+              +91 80139 68211
+            </div>
+          </a>
+          <a href="mailto:vea5a.pranam05@gmail.com" class="contact-btn cb-email">
+            <div class="cb-icon">✉️</div>
+            <div class="cb-text">
+              <span class="cb-label">Send an email</span>
+              vea5a.pranam05@gmail.com
+            </div>
+          </a>
+        </div>
+
+        <div class="address-box">
+          <h4>📍 Our Location</h4>
+          <p>
+            Enlighten Institute<br>
+            Opposite Maheshwari Bhawan,<br>
+            Dr. P.T. Laha Street, Bangur Park,<br>
+            Rishra, Hooghly – 712248<br>
+            West Bengal, India
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <h3>Send Us a Message</h3>
+        <div id="contactForm">
+          <div class="form-group">
+            <label>Your Full Name</label>
+            <input type="text" id="fname" placeholder="e.g. Rahul Sharma" />
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" id="fphone" placeholder="+91 XXXXX XXXXX" />
+          </div>
+          <div class="form-group">
+            <label>Class / Course Interested In</label>
+            <select id="fcourse">
+              <option value="" disabled selected>Select a course</option>
+              <option>Class 11 Mathematics</option>
+              <option>Class 12 Mathematics</option>
+              <option>JEE Mains Mathematics</option>
+              <option>WB JEE Mathematics</option>
+              <option>Multiple Courses</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Your Board of Education</label>
+            <select id="fboard">
+              <option value="" disabled selected>Select your board</option>
+              <option>CBSE</option>
+              <option>WBCHSE</option>
+              <option>ICSE</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message (optional)</label>
+            <textarea id="fmessage" placeholder="Any questions about batch timings, fees, or anything else..."></textarea>
+          </div>
+          <button class="form-submit" onclick="submitForm()">Send Enquiry via WhatsApp →</button>
+        </div>
+        <div class="form-success" id="formSuccess">
+          ✅ Redirecting you to WhatsApp with your details...
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom: 1rem;">
+          <div class="logo-icon">E</div>
+          <div>
+            <div class="logo-text">Enlighten Institute</div>
+            <div class="logo-sub">Mathematics Excellence</div>
+          </div>
+        </div>
+        <p>Dedicated Mathematics coaching for Class 11, 12, JEE Mains, and WB JEE — located in Rishra, Hooghly. Building confident mathematicians, one student at a time.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="#courses">Class 11 Mathematics</a></li>
+          <li><a href="#courses">Class 12 Mathematics</a></li>
+          <li><a href="#courses">JEE Mains Preparation</a></li>
+          <li><a href="#courses">WB JEE Preparation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#why">Why Enlighten</a></li>
+          <li><a href="#teacher">About Arvind Sharma</a></li>
+          <li><a href="#reviews">Student Reviews</a></li>
+          <li><a href="https://www.youtube.com/@ArvindSharmaEnlightenInstitue" target="_blank" rel="noopener">YouTube Channel</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Enlighten Institute. All rights reserved.</span>
+      <span>Designed with ♥ for Mathematics students in Rishra, Hooghly</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Navbar scroll effect
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) navbar.classList.add('scrolled');
+    else navbar.classList.remove('scrolled');
+  });
+
+  // Mobile menu
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('open');
+  }
+
+  // Close menu on outside click
+  document.addEventListener('click', (e) => {
+    const menu = document.getElementById('mobileMenu');
+    const hamburger = document.getElementById('hamburger');
+    if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+      menu.classList.remove('open');
+    }
+  });
+
+  // Smooth scroll for all anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', (e) => {
+      const target = document.querySelector(anchor.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        const offset = 80;
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // Form submit — redirect to WhatsApp with message
+  function submitForm() {
+    const name = document.getElementById('fname').value.trim();
+    const phone = document.getElementById('fphone').value.trim();
+    const course = document.getElementById('fcourse').value;
+    const board = document.getElementById('fboard').value;
+    const message = document.getElementById('fmessage').value.trim();
+
+    if (!name || !phone || !course) {
+      alert('Please fill in your name, phone number, and preferred course.');
+      return;
+    }
+
+    const text = `Hello Arvind Sir,\n\nI am interested in joining Enlighten Institute.\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Course:* ${course}\n*Board:* ${board || 'Not specified'}\n*Message:* ${message || 'None'}\n\nPlease let me know about batch timings and fees. Thank you!`;
+
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+
+    setTimeout(() => {
+      window.open(`https://wa.me/918013968211?text=${encodeURIComponent(text)}`, '_blank');
+    }, 800);
+  }
+
+  // Scroll reveal animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.why-card, .course-card, .review-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
