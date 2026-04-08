@@ -16,6 +16,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -37,11 +40,34 @@
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'DM Sans', sans-serif;
+      font-family: "Poppins";
       background: var(--white);
       color: var(--text-body);
       overflow-x: hidden;
     }
+
+    ::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1b2a; /* navy — matches the site background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f0a500; /* golden — matches the site's accent color */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffc107; /* slightly lighter gold on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #f0a500 #0d1b2a; /* thumb track */
+}
 
     /* ─── NAVBAR ─── */
     nav {
@@ -76,16 +102,16 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: 'Playfair Display', serif;
-      font-weight: 900;
+      font-family: "Poppins";
+      font-weight: 600;
       color: var(--navy);
       font-size: 1.1rem;
       flex-shrink: 0;
     }
 
     .logo-text {
-      font-family: 'Playfair Display', serif;
-      font-weight: 700;
+      font-family: "Poppins";
+      font-weight: 600;
       font-size: 1.1rem;
       color: var(--white);
       line-height: 1.2;
@@ -95,9 +121,16 @@
       font-size: 0.62rem;
       color: var(--gold);
       font-family: 'DM Sans', sans-serif;
-      font-weight: 500;
+      font-weight: 600;
       letter-spacing: 0.08em;
       text-transform: uppercase;
+    }
+
+    img{
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      margin-top: 80px;
     }
 
     .nav-links {
@@ -111,7 +144,7 @@
       color: rgba(255,255,255,0.75);
       text-decoration: none;
       font-size: 0.875rem;
-      font-weight: 500;
+      font-weight: 600;
       letter-spacing: 0.02em;
       transition: color 0.2s;
     }
@@ -221,9 +254,9 @@
     }
 
     .hero-title {
-      font-family: 'Playfair Display', serif;
+      font-family: "Poppins";
       font-size: clamp(2.4rem, 4.5vw, 4rem);
-      font-weight: 900;
+      font-weight: 600;
       color: var(--white);
       line-height: 1.15;
       margin-bottom: 1.25rem;
@@ -254,7 +287,7 @@
       border: none;
       padding: 14px 28px;
       border-radius: 4px;
-      font-weight: 700;
+      font-weight: 600;
       font-size: 0.9rem;
       text-decoration: none;
       display: inline-flex;
@@ -277,7 +310,7 @@
       border: 1.5px solid rgba(255,255,255,0.3);
       padding: 13px 28px;
       border-radius: 4px;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 0.9rem;
       text-decoration: none;
       display: inline-flex;
@@ -301,9 +334,9 @@
     .stat-item { text-align: left; }
 
     .stat-num {
-      font-family: 'Playfair Display', serif;
+      font-family: "Poppins";
       font-size: 1.9rem;
-      font-weight: 700;
+      font-weight: 600;
       color: var(--gold-light);
       line-height: 1;
     }
@@ -347,16 +380,16 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: 'Playfair Display', serif;
-      font-weight: 900;
+      font-family: "Poppins";
+      font-weight: 600;
       font-size: 1.4rem;
       color: var(--navy);
       flex-shrink: 0;
     }
 
     .teacher-info .name {
-      font-family: 'Playfair Display', serif;
-      font-weight: 700;
+      font-family: "Poppins";
+      font-weight: 600;
       color: var(--white);
       font-size: 1.05rem;
     }
@@ -400,7 +433,7 @@
 
     .section-label {
       font-size: 0.75rem;
-      font-weight: 700;
+      font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.1em;
       color: var(--gold);
@@ -408,9 +441,9 @@
     }
 
     .section-title {
-      font-family: 'Playfair Display', serif;
+      font-family: "Poppins";
       font-size: clamp(1.75rem, 3vw, 2.6rem);
-      font-weight: 800;
+      font-weight: 600;
       color: var(--navy);
       line-height: 1.25;
       margin-bottom: 1rem;
@@ -465,9 +498,9 @@
     }
 
     .why-card h3 {
-      font-family: 'Playfair Display', serif;
+      font-family: "Poppins";
       font-size: 1.1rem;
-      font-weight: 700;
+      font-weight: 600;
       color: var(--navy);
       margin-bottom: 0.6rem;
     }
@@ -519,7 +552,7 @@
       border: 1px solid rgba(201,152,42,0.3);
       border-radius: 100px;
       font-size: 0.7rem;
-      font-weight: 700;
+      font-weight: 600;
       color: var(--gold-light);
       text-transform: uppercase;
       letter-spacing: 0.06em;
@@ -527,9 +560,9 @@
     }
 
     .course-card h3 {
-      font-family: 'Playfair Display', serif;
+      font-family: "Poppins";
       font-size: 1.4rem;
-      font-weight: 800;
+      font-weight: 600;
       color: var(--white);
       margin-bottom: 0.75rem;
     }
@@ -584,9 +617,10 @@
     }
 
     .teacher-initial {
-      font-family: 'Playfair Display', serif;
+      font-family: "Poppins";
+      overflow: hidden;
       font-size: 6rem;
-      font-weight: 900;
+      font-weight: 600;
       color: rgba(201,152,42,0.3);
     }
 
@@ -596,7 +630,7 @@
       right: -16px;
       background: var(--gold);
       color: var(--navy);
-      font-weight: 700;
+      font-weight: 600;
       font-size: 0.75rem;
       padding: 10px 14px;
       border-radius: 10px;
@@ -611,7 +645,7 @@
       font-style: italic;
       font-size: 1.1rem;
       color: var(--gold);
-      font-family: 'Playfair Display', serif;
+      font-family: "Poppins";
       border-left: 3px solid var(--gold);
       padding-left: 1rem;
       margin: 1.5rem 0;
@@ -696,7 +730,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 700;
+      font-weight: 600;
       font-size: 0.875rem;
       color: var(--navy);
     }
@@ -724,7 +758,7 @@
     }
 
     .contact-info h3 {
-      font-family: 'Playfair Display', serif;
+      font-family: "Poppins";
       font-size: 1.5rem;
       color: var(--navy);
       margin-bottom: 1rem;
@@ -783,7 +817,7 @@
     .cb-email .cb-icon { background: #fee2e2; }
 
     .contact-btn .cb-text { text-align: left; }
-    .contact-btn .cb-label { display: block; font-size: 0.75rem; font-weight: 400; opacity: 0.7; margin-bottom: 1px; }
+    .contact-btn .cb-label { display: block; font-size: 0.75rem; font-weight: 600; opacity: 0.7; margin-bottom: 1px; }
 
     .address-box {
       background: var(--cream);
@@ -794,7 +828,7 @@
     }
 
     .address-box h4 {
-      font-family: 'Playfair Display', serif;
+      font-family: "Poppins";
       font-size: 0.95rem;
       color: var(--navy);
       margin-bottom: 0.5rem;
@@ -818,7 +852,7 @@
     }
 
     .contact-form-wrapper h3 {
-      font-family: 'Playfair Display', serif;
+      font-family: "Poppins";
       color: var(--white);
       font-size: 1.3rem;
       margin-bottom: 1.75rem;
@@ -876,7 +910,7 @@
       border-radius: 8px;
       font-family: 'DM Sans', sans-serif;
       font-size: 0.95rem;
-      font-weight: 700;
+      font-weight: 600;
       cursor: pointer;
       transition: background 0.2s, transform 0.2s;
     }
@@ -926,7 +960,7 @@
 
     .footer-col h4 {
       font-size: 0.8rem;
-      font-weight: 700;
+      font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.1em;
       color: var(--gold);
@@ -1227,7 +1261,7 @@
     <div class="teacher-wrapper">
       <div class="teacher-photo-box">
         <div class="teacher-photo-placeholder">
-          <span class="teacher-initial">A</span>
+          <span class="teacher-initial"><img src="./image.png" alt=""></span>
         </div>
         <div class="teacher-badge-floating">
           Mathematics<br>Expert
@@ -1363,7 +1397,7 @@
           <p>
             Enlighten Institute<br>
             Opposite Maheshwari Bhawan,<br>
-            Dr. P.T. Laha Street, Bangur Park,<br>
+            107/3 NK Banerjee Street<br>
             Rishra, Hooghly – 712248<br>
             West Bengal, India
           </p>
@@ -1509,7 +1543,7 @@
       return;
     }
 
-    const text = `Hello Arvind Sir,\n\nI am interested in joining Enlighten Institute.\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Course:* ${course}\n*Board:* ${board || 'Not specified'}\n*Message:* ${message || 'None'}\n\nPlease let me know about batch timings and fees. Thank you!`;
+    const text = `Hello Arvind Bhaiya,\n\nI am interested in joining Enlighten Institute.\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Course:* ${course}\n*Board:* ${board || 'Not specified'}\n*Message:* ${message || 'None'}\n\nPlease let me know about batch timings and fees. Thank you!`;
 
     document.getElementById('contactForm').style.display = 'none';
     document.getElementById('formSuccess').style.display = 'block';
